@@ -1,0 +1,111 @@
+:root {
+	--card-background: rgba(151, 151, 151, 0.8);
+}
+
+body {
+	display: grid;
+	justify-content: center;
+}
+
+.bundle {
+	margin-top: 2.5vh;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	border-radius: 30px;
+	height: 90vh;
+	width: 80vw;
+	background-repeat: no-repeat;
+	flex-direction: column;
+	background-size: cover;
+}
+
+.header > p {
+	text-align: center;
+}
+
+.city {
+	font-weight: bolder;
+	font-size: 30px;
+}
+
+.city,
+.condition-Text {
+	margin: 0px;
+}
+
+.temp {
+	margin: 0;
+	font-size: 60px;
+	margin-left: 15px;
+}
+
+.headerCards,
+.footerBoxes {
+	display: flex;
+	justify-content: space-evenly;
+	width: 80vw;
+}
+
+.cardOne,
+.cardTwo,
+.cardThree,
+.cardFour {
+	padding: 2px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-top: 10vh;
+	width: 180px;
+	background-color: var(--card-background);
+}
+
+.cardThree,
+.cardFour {
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.wind-dir {
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.lat-lon {
+	display: flex;
+	align-items: center;
+}
+
+.last-Updated {
+	margin: 0;
+	margin-bottom: -1.25vh;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+}
+
+.form {
+	margin-top: 20vh;
+	border-radius: 10px;
+	background-color: var(--card-background);
+	padding: 15px;
+}
+
+.form > input {
+	color: rgb(100, 100, 100);
+	font-size: 15px;
+	font-weight: bold;
+	background-color: rgb(188, 188, 188);
+}
+
+.form > button {
+	border-radius: 5px;
+	font-size: 15px;
+	background-color: none;
+}
