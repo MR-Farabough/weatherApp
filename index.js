@@ -1,6 +1,6 @@
 const $ = (elment) => document.querySelector(elment)
 const apiKey = '8ed706e7508f4120ad6231649233004'
-const locationSelect = 'auto:ip'
+const locationSelect = 'New York'
 const asdf = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${locationSelect}`
 let resultsArr = []
 async function apiCall(url) {
