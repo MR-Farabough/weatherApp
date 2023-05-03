@@ -1,10 +1,10 @@
 const $ = (elment) => document.querySelector(elment)
 const apiKey = '8ed706e7508f4120ad6231649233004'
-const locationSelect = 'New York'
+const locationSelect = 'auto:ip'
 const asdf = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${locationSelect}`
 let resultsArr = []
 async function apiCall(url) {
-    const response = await fetch(url).then(data => data.json())
+    const response = await fetch(url, { mode: 'cors' }).then(data => data.json())
     if (response.error) alert('Invalid Query')
     setData(response)
     return response
